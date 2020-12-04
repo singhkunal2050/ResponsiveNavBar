@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.8.55/css/materialdesignicons.min.css" integrity="sha512-x96qcyADhiw/CZY7QLOo7dB8i/REOEHZDhNfoDuJlyQ+yZzhdy91eAa4EkO7g3egt8obvLeJPoUKEKu5C5JYjA==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <!-- done in two variations: "light" and "dark" | Change <header> class to see impact. -->
+    <nav role="navigation">
+      <!-- <button class="mobile-search-icon" onclick="openSearch()"  >Search</button> -->
+      <span class="mdi mdi-magnify mobile-search-icon" onclick="openSearch()" style="color: #000000; font-size: 3em;" ></span>
+      <a href="javascript:void(0);" class="ic menu" tabindex="1">
+        <span class="line" style="background: black;"></span  >
+        <span class="line" style="background: black;"></span>
+        <span class="line" style="background: black;"></span>
+      </a>
+      <a href="javascript:void(0);" class="ic close"></a>
+      <img height="60px" src="aa.png" alt="">
+      <ul class="main-nav">
+        
+        <li class="top-level-link">
+          <a><span>Home</span></a>      
+        </li> 
+        
+        <li class="top-level-link">
+            <a><span>Industries</span></a>      
+        </li>
+
+        <li class="top-level-link">
+          <a class="mega-menu"><span>Insights</span></a>
+          <div class="sub-menu-block">
+            <div class="row">
+              <div class="col-md-4 col-lg-4 col-sm-4">
+                <h2 class="sub-menu-head">CAtegory</h2>
+                <ul class="sub-menu-lists">
+                  <li><a>sub-cat1</a></li>
+                  <li><a>sub-cat2</a></li>
+                </ul>           
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-4">
+                <h2 class="sub-menu-head">CAtegory</h2>
+                <ul class="sub-menu-lists">
+                  <li><a>sub-cat1</a></li>
+                  <li><a>sub-cat2</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!--<div class="row banners-area">
+              <div class="col-md-6 col-lg-6 col-sm-6">
+                <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+              </div>
+              <div class="col-md-6 col-lg-6 col-sm-6">
+                <img src="http://devitems.com/tf/teemo-preview/teemo/img/banner/banner-menu1.jpg" width="100%;">
+              </div>
+            </div>
+             -->
+
+          </div>
+        </li>
+        <li class="top-level-link">
+            <a><span>Services<span></a>    
+        </li>
+        <li class="top-level-link">
+            <a><span>About Us<span></a>    
+        </li>  
+
+        <li class="top-level-link">
+            <a><span>Contact Us<span></a>    
+        </li> 
+
+        <li class="top-level-link">
+            <form>
+	            <div class="input-group header-searchbox">
+	                <input type="text" class="form-control" placeholder="search report...">
+                    <button class="btn searchbox-btn" type="submit">
+                        <i class="fa fa-search"></i>Search
+                    </button>
+	            </div>
+	        </form>
+        </li>
+     
+      </ul> 
+    </nav>
+
+    <!-- overlay -->
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+      <div class="overlay-content">
+        <form id="overlay-form">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><span class="mdi mdi-magnify"></span></button>
+        </form>
+      </div>
+    </div>
+
+    <script >
+      // Open the full screen search box
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
